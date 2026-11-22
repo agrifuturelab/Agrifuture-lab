@@ -1,5 +1,5 @@
 // Customize your brand and videos here. Use actual public URLs only.
-window.AGRI_CONFIG = {facebookUrl:'',contactEmail:'',videos:[
+window.AGRI_CONFIG = {facebookUrl:'https://www.facebook.com/agrifuturelabrbt',contactEmail:'',videos:[
  {title:'Inside the world of soil microbes',category:'Plant science',url:''},
  {title:'How a seed becomes a plant',category:'Science lab',url:''},
  {title:'The future of smart irrigation',category:'Future farming',url:''}
