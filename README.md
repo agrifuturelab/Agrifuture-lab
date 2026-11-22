@@ -1,32 +1,28 @@
-# Agri Future Lab — website starter
+# Agri Future Lab — Version 3.2
 
-A separate, mobile-friendly, static website for the Agri Future Lab Facebook content brand. No framework, build process, paid hosting or API key required.
+Live website: https://rohitrajethombre-sudo.github.io/Agrifuture-lab/
 
-## What works
-- Responsive homepage and section navigation
-- English/Marathi switch for navigation and section headings (crop details and some educational text remain in English)
-- Searchable seven-crop reference library with educational summaries
-- Four working calculators: fertilizer nutrient mass, spray dilution from an *approved label rate*, area conversion, seed quantity
-- Expandable science topics, AI/future-farming and student resources
-- Facebook video cards, which become clickable after real URLs are configured
-- Contact and Facebook links once configured
+## Current features
+- Searchable **36-crop** library with English and Marathi summaries and six expanded educational guide sections per crop
+- English/Marathi language toggle
+- Basic calculators: fertilizer nutrient mass, spray dilution (from approved label rate), land conversion, seed requirement
+- Advanced nutrient and irrigation planning tools
+- Field planning calculators: plant population, drip runtime, spray tank fills
+- Learning: crop health, soil health, agriculture quiz and science resources
+- Responsive layout and Facebook page link
 
-## Before publishing
-1. Edit `data.js`: set `facebookUrl`, `contactEmail`, and each video's real `url`.
-2. Replace placeholder video titles with actual video titles.
-3. Review crop summaries with a local agronomist before relying on them for farming decisions.
-4. Open `index.html` in a browser to test. All three files `index.html`, `styles.css`, `app.js` and `data.js` must remain together.
+## Important limitations
+- Educational summaries are not crop-specific prescriptions. Confirm fertilizer rates, pesticide use, pest thresholds and local crop calendars with authorized extension services and registered product labels.
+- All 36 crop entries and bilingual fields were checked in source; **full browser-based regression testing across every crop has not been completed**.
+- Video gallery URLs and contact email are still placeholders until the site owner supplies verified links.
 
-## Publish to GitHub Pages
-1. Create a **new** GitHub repository, e.g. `agrifuture-lab` (do not modify your existing AgriSmart repository).
-2. Upload `index.html`, `styles.css`, `app.js`, `data.js` to its root.
-3. Open repository **Settings → Pages**; choose **Deploy from a branch**, branch `main`, folder `/ (root)`; Save.
-4. Wait for deployment and open the URL displayed in Pages settings. The site URL is typically `https://YOUR-USERNAME.github.io/agrifuture-lab/`, but confirm the actual URL in GitHub.
+## Files
+- `data.js`: original seven crops, Marathi summaries and site configuration
+- `v31-crops.js`: 29 additional crops and Marathi summaries
+- `v32-guides.js`: expanded six-section bilingual guide renderer
+- `app.js`: main crop search, language toggle and base tools
+- `v12.js`, `v13.js`, `v14.js`, `v20.js`, `v21.js`: additional tools and learning content
+- `index.html`, `styles.css`: layout and styles
 
-## Not implemented in this static release
-Live weather API, automated news feed, user login, AI chatbot, AI photo diagnosis, backend database, and video uploads. These need additional services and testing.
-
-## Notes
-- NPK fertilizer labels typically list N, P₂O₅, K₂O percentages; the calculator returns those nutrient-equivalent masses, not elemental P or K.
-- The spray calculator is arithmetic only, **not a pesticide dose recommendation**.
-- All crop content is general education; regional and product-specific guidance may differ.
+## Maintenance
+GitHub Pages deploys automatically from `main`. Keep the site stable; only change content or fix confirmed bugs. Avoid publishing invented input doses or unverified external links.
